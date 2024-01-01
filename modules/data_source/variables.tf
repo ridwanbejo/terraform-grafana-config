@@ -12,8 +12,8 @@ variable "data_sources" {
     username            = optional(string)
     database_name       = optional(string)
     http_headers        = optional(map(string))
-    
-    json_data_encoded        = optional(string)
-    secure_json_data_encoded = optional(string)
+
+    json_data_encoded        = optional(any)
+    secure_json_data_encoded = optional(any)
   }))
 }

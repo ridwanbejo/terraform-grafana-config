@@ -3,15 +3,13 @@ terraform {
 
   required_providers {
     grafana = {
-      source = "grafana/grafana"
+      source  = "grafana/grafana"
       version = "2.8.0"
     }
   }
 }
 
-provider "influxdb" {
-  url             = "http://localhost:8086"
-  username        = "admin"
-  password        = "admin"
-  skip_ssl_verify = true
+provider "grafana" {
+  url  = "http://localhost:3000//"
+  auth = "admin:grafana"
 }
