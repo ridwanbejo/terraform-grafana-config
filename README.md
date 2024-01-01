@@ -17,6 +17,7 @@ Tested in:
 Requirements:
 
 - Terraform with version >= 1.4
+- grafana/grafana = 2.8.0
 
 ## B. How to use this module for your Terraform project ?
 
